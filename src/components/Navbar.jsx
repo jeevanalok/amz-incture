@@ -62,7 +62,7 @@ function AppNavbar() {
             className="d-lg-none btn btn-outline-light me-2"
             onClick={handleShowOffcanvas}
           >
-            <Menu color={theme==="light"?"black":"white"} />
+            <Menu color={theme === "light" ? "black" : "white"} />
           </button>
 
           {/* Logo */}
@@ -100,6 +100,13 @@ function AppNavbar() {
               <Search />
             </button>
           </Form>
+          <Nav.Link as={Link} to="/cart" className="cart-link d-lg-none">
+            <div className="cart-icon-container">
+              <ShoppingCart />
+              <span className="cart-count">{cartQuantity()}</span>
+            </div>
+            Cart
+          </Nav.Link>
 
           {/* Right Side Navigation */}
           <Nav className="ms-auto align-items-center d-none d-lg-flex">
@@ -166,16 +173,15 @@ function AppNavbar() {
             <Nav.Link as={Link} to="/login" onClick={handleCloseOffcanvas}>
               Sign In
             </Nav.Link>
-            <Nav.Link as={Link} to="/cart" onClick={handleCloseOffcanvas}>
-              Cart ({cartQuantity()} items)
-            </Nav.Link>
             <Nav.Link
               onClick={() => {
                 toggleTheme();
                 handleCloseOffcanvas();
               }}
             >
-              {theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
+              {theme === "light"
+                ? "Switch to Dark Mode"
+                : "Switch to Light Mode"}
             </Nav.Link>
           </Nav>
         </Offcanvas.Body>

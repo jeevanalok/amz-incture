@@ -19,36 +19,21 @@ function Banner() {
             <img
               src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg"
               alt="Amazon Banner"
-              className="w-100"
-              style={{
-                height: "40vw",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
+              className="w-100 amazon-banner"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Mounika/OPPOF29/D219140021_Update_DesktopHeroTemplate_3000x1200_ref_Mar26_2._CB546718169_.jpg"
               alt="Amazon Banner"
-              className="w-100"
-              style={{
-                height: "40vw",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
+              className="w-100 amazon-banner"
             />
           </Carousel.Item>{" "}
           <Carousel.Item>
             <img
               src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg"
               alt="Amazon Banner"
-              className="w-100 "
-              style={{
-                height: "40vw",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
+              className="w-100 amazon-banner" 
             />
           </Carousel.Item>
         </Carousel>

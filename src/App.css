@@ -30,6 +30,19 @@ html {
   }
 }
 
+.amazon-banner {
+  height: 40vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .amazon-banner {
+    height: 50vh;
+  }
+
+}
+
 /* Navbar Styles */
 .amazon-navbar {
   background-color: var(--primary-color) !important;
